@@ -1,4 +1,4 @@
-# 코드 간단 설명
+# 버전 설명
 
 자세한 설명은 https://mysterious-world.tistory.com/2 에 있다. 
 
