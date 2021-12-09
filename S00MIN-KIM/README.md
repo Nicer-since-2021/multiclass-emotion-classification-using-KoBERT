@@ -56,13 +56,13 @@ Encoder는 단순한 self-attention 레이어를 사용하는 반면, Decoder는
 2. [웰니스 대화 스크립트 데이터셋](https://aihub.or.kr/opendata/keti-data/recognition-laguage/KETI-02-006)
   
   ※ (<챗봇의 응답> | <사용자의 발화>, <감정 라벨>) 형식이 되도록 라벨링 작업이 필요하다.
-<img src="https://user-images.githubusercontent.com/68471619/145357192-bf3639a2-a33d-4db0-93c7-3efc9780db4f.png" width="800" height="400"/>
+<img src="https://user-images.githubusercontent.com/68471619/145357192-bf3639a2-a33d-4db0-93c7-3efc9780db4f.png" width="800" height="500"/>
 
 # 결과
  우울이 느껴지는 문장 위주로 테스트
  
-<img src="https://user-images.githubusercontent.com/68471619/145357864-43abe9db-a35f-4300-bf2d-6473e68db0b1.png" width="400" height="400"/>
-<img src="https://user-images.githubusercontent.com/68471619/145357884-30bc212c-a648-4570-8520-fb0550fd332a.png" width="400" height="400"/>
+<img src="https://user-images.githubusercontent.com/68471619/145357864-43abe9db-a35f-4300-bf2d-6473e68db0b1.png" width="400" height="700"/>
+<img src="https://user-images.githubusercontent.com/68471619/145357884-30bc212c-a648-4570-8520-fb0550fd332a.png" width="400" height="700"/>
 
 
 ## reference
