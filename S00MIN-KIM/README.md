@@ -61,8 +61,8 @@ Encoder는 단순한 self-attention 레이어를 사용하는 반면, Decoder는
 # 결과
  우울이 느껴지는 문장 위주로 테스트
  
-![image](https://user-images.githubusercontent.com/68471619/145357864-43abe9db-a35f-4300-bf2d-6473e68db0b1.png){: width="60%"}
-![image](https://user-images.githubusercontent.com/68471619/145357884-30bc212c-a648-4570-8520-fb0550fd332a.png){: width="60%"}
+![image](https://user-images.githubusercontent.com/68471619/145357864-43abe9db-a35f-4300-bf2d-6473e68db0b1.png){: width="300" height="300"}
+![image](https://user-images.githubusercontent.com/68471619/145357884-30bc212c-a648-4570-8520-fb0550fd332a.png){: width="300" height="300"}
 
 
 ## reference
