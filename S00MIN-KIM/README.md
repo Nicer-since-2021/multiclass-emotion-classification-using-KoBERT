@@ -14,11 +14,11 @@
 - **다중분류** 가능
 - KoBERT는 이를 한국어로 학습시킨 모델
 ### 원리
-1. 대량의 말뭉치를 Encoder를 통해 임베딩한 후 사전학습힌다. 
-Token Embedding(Word Piece Embedding) + Segment Embedding(Sentence Embedding) + Position Embedding(Self Attention)
+1. 대량의 말뭉치를 Encoder를 통해 임베딩한 후 사전학습한다. 
+  Token Embedding(Word Piece Embedding) + Segment Embedding(Sentence Embedding) + Position Embedding(Self Attention)
 
 2. 사전 학습모델을 전이하여 파인튜닝하고 Task를 수행한다.
-MLM(Masked Language Model)와 NSP(Next Sentence Prediction)의 두 가지 방식을 이용한다.
+  MLM(Masked Language Model)와 NSP(Next Sentence Prediction)의 두 가지 방식을 이용한다.
 
 ## GPT2
 ### 특성
@@ -40,11 +40,11 @@ Encoder는 단순한 self-attention 레이어를 사용하는 반면, Decoder는
 ### KoGPT2 챗봇
 1. [챗봇 트레이닝용 문답 페어](https://github.com/songys/Chatbot_data)
 2. [웰니스 대화 스크립트 데이터셋](https://aihub.or.kr/opendata/keti-data/recognition-laguage/KETI-02-006)
-※ (<챗봇의 응답> | <사용자의 발화>, <감정 라벨>) 형식이 되도록 라벨링 작업이 필요하다.
+  ※ (<챗봇의 응답> | <사용자의 발화>, <감정 라벨>) 형식이 되도록 라벨링 작업이 필요하다.
 ![image](https://user-images.githubusercontent.com/68471619/145357192-bf3639a2-a33d-4db0-93c7-3efc9780db4f.png)
 
 # 결과
-우울이 느껴지는 문장 위주로 테스트
+ 우울이 느껴지는 문장 위주로 테스트
 ![image](https://user-images.githubusercontent.com/68471619/145357864-43abe9db-a35f-4300-bf2d-6473e68db0b1.png)
 ![image](https://user-images.githubusercontent.com/68471619/145357884-30bc212c-a648-4570-8520-fb0550fd332a.png)
 
