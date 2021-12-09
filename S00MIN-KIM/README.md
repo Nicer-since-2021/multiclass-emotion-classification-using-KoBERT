@@ -15,9 +15,11 @@
 - KoBERT는 이를 한국어로 학습시킨 모델
 ### 원리
 1. 대량의 말뭉치를 Encoder를 통해 임베딩한 후 사전학습한다. 
+
   Token Embedding(Word Piece Embedding) + Segment Embedding(Sentence Embedding) + Position Embedding(Self Attention)
 
 2. 사전 학습모델을 전이하여 파인튜닝하고 Task를 수행한다.
+
   MLM(Masked Language Model)와 NSP(Next Sentence Prediction)의 두 가지 방식을 이용한다.
 
 ## GPT2
@@ -27,24 +29,29 @@
 - KoGPT2는 이를 한국어로 학습시킨 모델
 ### 원리 
 Encoder는 단순한 self-attention 레이어를 사용하는 반면, Decoder는 Masked Self Attention을 사용한다.
+
 자기 회귀(Auto-regressive)적인 언어 모델이라 이미 생성된 토큰이 다음 토큰의 생성 확률에 영향을 끼치고, 이를 통해 다음 단어 예측이 가능하다. 
+
 챗봇은 이러한 특성을 통해 다음 단어를 예측하는 Task를 반복하여 문장을 생성한다.
 
 # 학습 데이터셋
 
 ### KoBERT 다중감정분류
 1.~~[한국어 감정 정보가 포함된 단발성 대화 데이터셋](https://aihub.or.kr/opendata/keti-data/recognition-laguage/KETI-02-009)~~
+
 2. [감정 분류를 위한 대화 음성 데이터셋](https://aihub.or.kr/opendata/keti-data/recognition-laguage/KETI-02-002)
 ![image](https://user-images.githubusercontent.com/68471619/145357042-0109cb8f-507c-4875-96df-9ee3e6eb1026.png)
 
 ### KoGPT2 챗봇
 1. [챗봇 트레이닝용 문답 페어](https://github.com/songys/Chatbot_data)
+
 2. [웰니스 대화 스크립트 데이터셋](https://aihub.or.kr/opendata/keti-data/recognition-laguage/KETI-02-006)
   ※ (<챗봇의 응답> | <사용자의 발화>, <감정 라벨>) 형식이 되도록 라벨링 작업이 필요하다.
 ![image](https://user-images.githubusercontent.com/68471619/145357192-bf3639a2-a33d-4db0-93c7-3efc9780db4f.png)
 
 # 결과
  우울이 느껴지는 문장 위주로 테스트
+ 
 ![image](https://user-images.githubusercontent.com/68471619/145357864-43abe9db-a35f-4300-bf2d-6473e68db0b1.png)
 ![image](https://user-images.githubusercontent.com/68471619/145357884-30bc212c-a648-4570-8520-fb0550fd332a.png)
 
